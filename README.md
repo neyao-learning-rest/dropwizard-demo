@@ -18,3 +18,10 @@ Then just open your browser and access http://localhost:8080£¬ belowing is all t
 - http://localhost:8080/weixin
 - http://localhost:8080/weixin?name=foo  
   use a parameter that will be shown in response body later
+
+  
+References
+-------------
+
+**dropwizard git demos**
+- https://github.com/federecio
