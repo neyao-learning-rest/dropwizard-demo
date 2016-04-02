@@ -1,7 +1,7 @@
 package cn.com.deepdata.datacenter;
 
 import cn.com.deepdata.datacenter.example.TemplateHealthCheck;
-import cn.com.deepdata.datacenter.resources.WeixinResource;
+import cn.com.deepdata.datacenter.resources.UserResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;
@@ -30,7 +30,7 @@ public class DataCenterApplication extends Application<DataCenterConfiguration> 
         System.out.println("configuration getDefaultName" + configuration.getDefaultName());
         System.out.println("configuration getTemplate" + configuration.getTemplate());
 
-        final WeixinResource resource = new WeixinResource(configuration.getTemplate(), configuration.getDefaultName());
+        final UserResource resource = new UserResource(configuration.getTemplate(), configuration.getDefaultName());
         environment.jersey().register(resource);
 
         final TemplateHealthCheck healthCheck = new TemplateHealthCheck(configuration.getTemplate());

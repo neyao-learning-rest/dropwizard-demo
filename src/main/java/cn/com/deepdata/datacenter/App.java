@@ -1,13 +1,13 @@
 package cn.com.deepdata.datacenter;
 
 /**
- * Hello world!
+ * User world!
  *
  */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        System.out.println( "User World!" );
     }
 }
